@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-size: 30px;
+    max-width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ed2939;
+    margin-bottom: 10vh;
+}
+.nav ul {
+    display: inline;
+}
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+    padding: 10px 10px 10px 10px;
+    font-size: px;
+}
+.nav li {
+    list-style: none;
+    display: inline;
+    padding-right: 20px;
+}
+.nav a:hover {
+    background: black;
+}
+
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99.6vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #323232 0%, #33383D 100%);
+   
+}
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #5072A7 0%, #6488C1 100%);
+}
+#projects img{
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects-grid  {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+}
+.projects-grid figcaption {
+    padding-bottom: 30px;
+}
+.projects-grid a {
+    text-decoration: none;
+    color:white;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #33383D 0%, #323232 100%);
+}
+.contacts li {
+    list-style: none;
+    padding-bottom: 50px;
+    transition: transform 0.3s ease-out;
+}
+.contacts a {
+    text-decoration: none;
+    color: white;   
+}
+.contacts a:hover {
+    border: medium solid black;
+    box-shadow:1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+footer {
+    font-size: small;
+    bottom: 0;
+    right: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px
+    }
+}
